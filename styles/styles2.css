@@ -1,0 +1,19 @@
+mark{
+    background-color: aquamarine;
+}
+
+.boldText{
+    font-size: 80px;
+}
+
+.busImg{
+    border: 10px dotted red;
+    /* padding: 20px 0 10px; */
+    /* margin: 50px; */
+}
+
+.bearImg{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
