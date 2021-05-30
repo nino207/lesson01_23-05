@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="blockLevel, inlineLevel, scripts, getElementById, pythagorasAcademy">
+    <link rel="stylesheet" href="/styles/styles3.css">
+    <title>მესამე გაკვეთილი</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .input{
+            width: 300px;
+            height: 50px;
+            padding: 0 10px;
+            margin: 10px 0;
+            border: 2px solid rgb(177, 104, 118);
+            border-radius: 20px;
+        }
+
+        label{
+            padding-left: 15px;
+        }
+
+        .loremText{
+            padding: 20px;
+            margin: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center; margin-bottom: 20px;">ავტორიზაცია</h3>
+    <form style="width: 300px; margin: auto;">
+        <label>თქვენი სახელი</label>
+        <br>
+        <input class="input" type="text" placeholder="სახელი">
+        <br>
+        <label>თქვენი პაროლი</label>
+        <br>
+        <input class="input" type="password" placeholder="პაროლი">
+    </form>
+    <br>
+    <div class="loremText" style="background-color: aquamarine;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore neque ea quae maxime repudiandae pariatur deleniti quos rerum, eius minima aliquid dolore ex iste commodi distinctio eaque voluptate doloremque natus odio debitis magni quam! Officia, est amet iure incidunt aliquid veniam veritatis architecto maiores! Quidem inventore exercitationem debitis aliquid consequatur, molestiae tenetur modi architecto ipsam sunt commodi sit dicta? Dolorum illum, debitis totam iste in repellendus rerum doloribus molestias culpa vitae officia nostrum veniam sit quidem? Cupiditate libero commodi, quaerat exercitationem eius nesciunt in quis quam repellat neque temporibus optio dolorem ex tempora sit consequuntur aliquid aspernatur ea debitis? Adipisci?</div>
+
+    <ol style="background-color: burlywood;">
+        <li>sxva ipsum dolor sit amet.sxva3</li>
+        <li>sxva ipsum dolor sit amet.sxva3</li>
+        <li>sxva, ipsum dolor.</li>
+        <li>sxva ipsum dolor sit.</li>
+        <li>sxva ipsum dolor sit.</li>
+        <li>sxva ipsum dolor sit.</li>
+    </ol>
+    <br>
+    <hr>
+    <h1 style="background-color: coral;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, ea!</h1>
+
+
+    <a href="#" style="background-color: cornflowerblue;">inline-level element</a>
+    <a href="#" style="background-color: cornflowerblue;">inline-level element</a>
+    <button>click</button>
+
+    <img id="foxPhoto" src="/images/fox.webp" alt="fox" style="width: 300px;">
+    <button onclick="changePhoto()">change photo</button>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quos natus maiores atque similique excepturi consectetur, quod id maxime dolor possimus illo et veritatis rerum eaque asperiores neque exercitationem error, illum qui. <span style="font-weight: bold; color: crimson;">Lorem, ipsum dolor.</span> Qui doloremque quis atque voluptate debitis? Molestiae labore autem praesentium illo, minus architecto consequuntur, ipsum doloremque modi ratione sunt commodi eligendi consectetur aspernatur repellat sit distinctio itaque numquam accusamus. Tempora debitis laudantium fugit rerum assumenda officiis velit rem alias temporibus sint facere odio omnis unde sed voluptate eius distinctio recusandae corrupti asperiores, quasi aliquid fugiat, reiciendis ut qui! Hic vel inventore dolorum veritatis. Eos qui recusandae tempora doloribus.</p>
+
+
+    <br>
+
+    <p id="redTobe">უნდა გაფერადდეს ეს ტექსტი წითლად</p>
+    <button onclick="coloring()">color the text in red</button>
+    <br>
+    <br>
+    <p id="changeText">უნდა შეიცვალოს ეს ტექსტი</p>
+    <button onclick="changeText()">change text</button>
+
+    <br>
+    <br>
+    <button onclick="sayHello()">hi there</button>
+    <p id="sayHello"></p>
+
+    <div class="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt quos perferendis quibusdam excepturi, fugiat, architecto id pariatur laborum dolorum eum est. Earum error culpa consequuntur libero eligendi? Deleniti, a ratione.</div>
+
+    <header style="background-color: darkgoldenrod;" class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quibusdam alias deserunt vel maxime eius id, laborum aspernatur blanditiis. Repudiandae nemo animi exercitationem numquam minus voluptatibus maxime enim reprehenderit delectus.
+        <nav>
+            <a href="#">მთავარი</a>
+            <a href="#">ხდკ</a>
+            <a href="#">კონტაქტი</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- მთავარი კონტენტი -->
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iure nisi dolores, molestiae enim porro eveniet, quisquam reiciendis inventore accusamus ex, nobis perferendis veritatis maiores. Tempora consectetur aut vero cupiditate nihil maiores iste accusantium, voluptate quo amet sint totam fugiat numquam atque aspernatur, sequi temporibus deserunt eaque molestias sed, accusamus debitis voluptatem. Sequi maiores possimus, culpa vero deserunt facere numquam tempora sapiente a quis consectetur eius tenetur blanditiis debitis incidunt necessitatibus doloribus accusamus sint tempore, sit dolorem minima. Soluta, repellat! Repudiandae sint vel itaque animi! Rerum molestias et, sapiente illum accusamus enim sint quo debitis, quis quae voluptate, itaque nobis.
+    </main>
+
+    <footer style="background-color: darkcyan;">footer to be</footer>
+
+    
+
+
+
+
+    <script src="/scripts/l3Scripts.js"></script>
+    <script>
+        // function coloring() {
+        //     document.getElementById("redTobe").style.color = "red";
+        // }
+        function changeText() {
+            document.getElementById("changeText").innerHTML = "შეცვლილი ტექსტი";
+        }
+
+        function changePhoto(){
+            document.getElementById("foxPhoto").src = "/images/fox.jpg";
+        }
+
+        function sayHello(){
+            document.getElementById("sayHello").innerHTML = "გამარჯობა";
+            document.getElementById("sayHello").style.fontSize = "40px";
+        }
+    </script>
+</body>
+</html>
