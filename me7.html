@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი #7</title>
+</head>
+<body>
+    <label for="x">შემოიტანეთ x-ის მნიშვნელობა</label>
+    <input type="number" name="x" id="x">
+    <br>
+    <label for="y">შემოიტანეთ y-ის მნიშვნელობა</label>
+    <input type="number" name="y" id="y">
+
+    <p>თუ X + Y მეტია 30ზე და X არ არის მეტი 15ზე, დაბეჭდე “Y მეტია 16ზე”.</p>
+
+    <p>პასუხი: <span id="pasuxi" style="color:crimson"></span></p>
+    <button onclick="metia16ze()">გამოთვლა</button>
+
+
+    <script>
+        function metia16ze(){
+            var pasuxisVeli = document.getElementById('pasuxi');
+            
+            var metia16ze = 'Y მეტია 16ზე';
+            var naklebia16ze = 'y არ არის მეტი 16-ზე';
+
+            var x = parseInt(document.getElementById('x').value);
+            var y = parseInt(document.getElementById('y').value);
+
+            if(x+y>30 && x<=15){
+                pasuxisVeli.innerHTML = metia16ze;
+            }else{
+                pasuxisVeli.innerHTML = naklebia16ze;
+            }
+        }
+    </script>
+</body>
+</html>
