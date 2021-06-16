@@ -60,16 +60,12 @@ function namravlisNishani() {
 //     return s;
 // }
 // console.log(mandzili(120, 8));
-function findS() {
-    function mandzili(t, v) {
-        var tSaatebi = t / 60;
-        var s = v * tSaatebi;
-        return s;
-    }
-    
+function mandzili() {
     var inputDro = document.getElementById('t').value;
     var inputSichqare = document.getElementById('v').value;
-    document.getElementById('datvliliMandzili').innerHTML = mandzili(inputDro, inputSichqare);
+    var droSaatshi = inputDro / 60;
+    var mandzili = droSaatshi * inputSichqare;
+    document.getElementById('datvliliMandzili').innerHTML = 'მოცემულ დროში მოცემული სიჩქარით დაიფარებოდა ' + mandzili + 'კმ. მანძილი.'
 }
 
 
