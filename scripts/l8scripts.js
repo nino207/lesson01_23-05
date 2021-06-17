@@ -8,7 +8,8 @@ for (i = start; i < finish; i+=2) {
     if (iyofa5ze && kentia) {
         sum += i;
     }
-} console.log(sum);
+}
+console.log(sum);
 
 
 function udidesi() {
