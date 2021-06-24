@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>მეათე შეხვედრა</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>მომხმარებელმა უნდა შექმნას 10 ელემენტიანი მასივი.
+        შექმნილი მასივიდან ერთ მასივში უნდა გადაეწყოს კენტ ინდექსზე მდგომი ელემენტები,
+        ხოლო მეორე მასივში უნდა გადაეწყოს ლუწი ელემენტები.
+        ბოლოს მომხმარებელს უნდა აჩვენოთ როგორც მის მიერ შექმნილი მასივი, ასევე ჯავასკრიპტის ფუნქციის გაშვების შედეგად მიღებული მასივებიც.
+    </p>
+    <button onclick="masivebisGadawyoba()">გადავაწყოთ ელემენტები</button>
+
+    <p id="tavdapirveliMasivi"></p>
+    <p id="kentiIndeqsebi"></p>
+    <p id="luwiElementebi"></p>
+
+    <hr>
+
+    <p>
+        მომხმარებელმა შემოიტანოს სასურველი რაოდენობის ელემენტები და ამ ელემენტებით შევქმნათ მასივი. გავაკენთოთ ყველა ლუწი ელემენტი თითო ერთეულის დამატებით.
+    </p>
+    <label for="ramdeniEl">რამდენი ელემენტის შემოტანა გსურთ?</label>
+    <input type="number" name="ramdeniEl" id="ramdeniEl">
+    <br>
+    <button onclick="gakenteba()">შემოვიტანოთ სასურველი რაოდენობის რიცხვები და გავაკენტოთ ლუწები</button>
+
+    <p id="luwiElementebi"></p>
+    <hr>
+
+    <div id="coloredBox" style="width: 300px; height: 100px; background-color: aquamarine;"></div>
+
+    <img src="https://learn.zoner.com/wp-content/uploads/2018/08/landscape-photography-at-every-hour-part-ii-photographing-landscapes-in-rain-or-shine.jpg" alt="landscape Photo" id="landscapePhoto">
+
+
+    <script src="/scripts/l9scripts.js"></script>
+</body>
+</html>

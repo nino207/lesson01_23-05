@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მეთერთმეტე შეხვედრა</title>
+
+    <style>
+        .someClass{
+            color: rgb(0, 89, 92);
+            font-size: 30px;
+            background-color: darkgray;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .toggleClass{
+            color: rgb(92, 0, 0);
+            font-size: 50px;
+            background-color: rgb(15, 12, 12);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hide{
+            display: none;
+        }
+
+        .displayBlock{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="addClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iure omnis, tempora quia nisi doloribus voluptas consectetur quae minima perspiciatis?</div>
+    <button onclick="addClass()" style="padding: 10px; border: 3px double blue; border-radius: 20px; cursor: pointer;">add class</button>
+    <button onclick="removeClass()">remove class</button>
+
+    <br>
+    <div id="toggleExample"">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iure omnis, tempora quia nisi doloribus voluptas consectetur quae minima perspiciatis?</div>
+    <button onclick="toggleClass()" style="padding: 10px; border: 3px double red; border-radius: 20px; cursor: pointer;">toggle class</button>
+
+    <br>
+    <div id="showHide" class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, autem?</div>
+    <button onclick="showDiv()">show Hidden div</button>
+
+    <hr style="border-top: 5px dotted red;">
+
+    <p>
+        შემოვატანინოთ მომხმარებელს მასივის ელემენტები და დავბეჭდოთ ყველა სამის ჯერადი რიცხვის ნამრავლი.
+    </p>
+    <button onclick="samisJeradebi()">სამის ჯერადი რიცხვების ნამრავლი</button>
+
+    <p>შემოვატანინოთ მომხმარებელს მასივის ელემენტები და დავბეჭდოთ შემოტანილი რიცხვებიდან მაქსიმალური.</p>
+    <button onclick="maxEl()">უდიდესი რიცხვის ჩვენება</button>
+
+    <p>მომხმარებელს საშუალება აქვს შემოიტანოს ორი რიცხვი და სასურველი რიცხვების მიმდევრობის რაოდენობა. რიცხვების მიმდევრობა უნდა ექვემდებარებოდეს შემდეგ წესს: ყოველი შემდეგი რიცხვი უნდა იყოს წინა ორის ჯამი.</p>
+    <button onclick="winaOrisJami()">უდიდესი რიცხვის ჩვენება</button>    
+
+    <script src="/scripts/l10scripts.js"></script>
+</body>
+</html>
