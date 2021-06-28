@@ -6,30 +6,27 @@ function samisJeradebi() {
     for (var i = 0; i < raodenoba; i++){
         var el = parseInt(prompt('შემოიტანეთ რიცხვები'));
         masivi.push(el);
-    }
-
-    for (var j = 0; j < masivi.length; j++){
-        var samisJeradi = masivi[j] % 3 == 0;
+        var samisJeradi = masivi[i] % 3 == 0;
         if (samisJeradi) {
-            namravli *= masivi[j];
-        } else {
-            namravli = 0;
+            namravli *= masivi[i];
         }
     }
-    alert('სამის ჯერადი რიცხვების ნამრავლია ' + namravli);
+    if (namravli != 1) {
+        alert('სამის ჯერადი რიცხვების ნამრავლია ' + namravli);
+    }else {
+        alert('თქვენს მიერ შემოტანილი რიცხვებიდან არც ერთი არ არის სამის ჯერადი');
+    }
 }
 
 function maxEl() {
     var masivi = [];
     var raodenoba = parseInt(prompt('რამდენი რიცხვის შემოტანა გსურთ?'));
     
-    for (var i = 0; i < raodenoba; i++){
-        var el = parseInt(prompt('შემოიტანეთ ' + (raodenoba - i) + ' რიცხვი'));
+    var max = 0;
+    for (var j = 0; j < raodenoba; j++){
+        var el = parseInt(prompt('შემოიტანეთ ' + (raodenoba - j) + ' რიცხვი'));
         masivi.push(el);
-    }
-    
-    var max = masivi[0];
-    for (var j = 0; j < masivi.length; j++){
+
         if (max < masivi[j]) {
             max = masivi[j];
         }
