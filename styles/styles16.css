@@ -1,0 +1,82 @@
+/* div:hover{
+    background-color: burlywood;
+} */
+
+p:first-child {
+    color: red;
+}
+
+p:last-child{
+    font-size: 30px;
+}
+
+p:nth-child(3){
+    background-color: cadetblue;
+}
+
+a:visited{
+    color: yellow;
+}
+
+/* a:active{
+    color: tomato;
+} */
+
+input:required{
+    border: 2px solid tomato;
+}
+
+input:checked{
+    width: 100px;
+    height: 50px;
+}
+
+#firstPar::after{
+    /* content: url('https://i.natgeofe.com/k/7bfcf2d2-542e-44f0-962a-c36f2efa98a5/heart.jpg?w=636&h=358'); */
+    content: 'ჩასმული ტექსტი';
+}
+
+#firstPar::before{
+    content: url('https://image.shutterstock.com/image-vector/measuring-hand-human-gesture-vector-260nw-1186724650.jpg');
+}
+
+p::first-letter{
+    font-size: 30px;
+    color: tomato;
+}
+
+.someLorem::first-line{
+    color: violet;
+}
+
+::selection{
+    background-color: red;
+}
+
+.parentDiv{
+    width: 800px;
+    height: 800px;
+    background-color: sandybrown;
+    position: relative;
+}
+
+.childDiv{
+    width: 200px;
+    height: 400px;
+    background-color: royalblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: skew(10deg, 20deg);
+}
+
+
+.childDiv:hover{
+    /* transform: translate(100px, 200px);
+    transform: rotate(50deg);
+    transform: skew(10deg, 20deg); */
+    transform: scale(1.2, 1.2);
+    /* transform: matrix(); */
+}
+
